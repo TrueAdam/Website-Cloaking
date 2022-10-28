@@ -1,0 +1,33 @@
+<html>
+<head>
+
+<style>
+button{
+            color: black;
+            padding: 10px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            background-color: lightgrey;
+            border-radius: 15px;}
+</style>
+
+     </head> 
+
+  <body>
+    <button onclick="opengame()">TEXT ON THE BUTTON</button>
+    <script>
+      function opengame() {
+        var win = window.open()
+        var url = "URL HERE"
+        var iframe = win.document.createElement('iframe')
+        iframe.style.width = "100%";
+        iframe.style.height = "100%";
+        iframe.style.border = "none";
+        iframe.src = url
+        win.document.body.appendChild(iframe)
+      }
+
+    </script>
+  </body>
+</html>
